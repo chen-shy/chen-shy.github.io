@@ -1,5 +1,7 @@
 # chen-shy.github.io
 
+[![Build Status](https://travis-ci.org/chen-shy/chen-shy.github.io.svg?branch=develop)](https://travis-ci.org/chen-shy/chen-shy.github.io)
+
 ## start
 
 ```
