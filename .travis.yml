@@ -1,0 +1,22 @@
+# https://github.com/yegor256/blog/blob/master/.travis.yml
+
+language: ruby
+rvm:
+- 2.2.5
+sudo: required
+branches:
+  only:
+  - develop
+cache:
+  directories:
+  - vendor/bundle
+before_install:
+- set -e
+- git config --global user.email "travis@wxxeibo.github.io"
+- git config --global user.name "travis"
+install:
+- set -e
+- travis_retry bundle install
+- travis_retry gem install jgd -v 1.11
+script:
+- jgd --bundle --branch-from develop --branch master --url https://wxxeibo:${PASSWORD}@github.com/chen-shy/chen-shy.github.io.git

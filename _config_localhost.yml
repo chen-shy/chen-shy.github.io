@@ -1,0 +1,14 @@
+### MUST CHANGE ###
+wxxeibo:
+  short_name: chen-shy
+  long_name: Chen Shiyu
+  long_name2: 陈诗雨
+  main_photo: https://chen-shy.github.io/attachments/69.jpg
+### MUST CHANGE ###
+
+github:
+  url: "http://localhost:4000"
+photos_repo:
+  url: "https://chen-shy.github.io/attachments"
+assets:
+  cache: false

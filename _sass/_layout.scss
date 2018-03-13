@@ -1,0 +1,137 @@
+// Wrap
+.wrap {
+//    height:unquote("calc( 100vh - #{$navbar-height} )");
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    backface-visibility: hidden;
+    will-change: overflow;
+  }
+
+.wraptainer {
+   margin-top: $header-margin;   
+}
+
+// Header
+#header {
+    padding: 0.9375rem 0;
+    background-color: $header-color;
+    z-index: 5;
+}
+
+.header-logo:hover {
+    opacity:.9;
+}
+
+ul > .header-nav > a {
+    color: $header-link-color;
+}
+
+ul > .header-nav > a:hover {
+    color: $header-link-hover-color 
+}
+
+ul > .header-nav > a:visited {
+    color: $header-link-color;
+}
+
+.site-header .menu .active > a {
+    background-color: $header-active-link-color;
+    color: $header-link-color;
+}
+
+.social-container {
+    margin: 0;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+// Containers
+.content_container {
+    flex: 1;
+    overflow: auto;
+    height: auto;
+    padding: .5rem;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+
+.biopic {
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+    border-radius: 200px;
+    padding-left: 1em;
+}
+
+.bio {
+    padding-top: 2em;
+}
+
+.recent-posts {
+    font-size: 0.8rem;
+}
+
+// Pages
+.page-content {
+    padding: 0 1.2rem 1.2rem 1.2rem;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.sidebar {
+    order: 2;
+    background-color: $sidebar-color;
+}
+
+.sidebar h2 {
+    text-transform: uppercase;
+}
+
+.sidebar ul li {
+    padding: 0 0 1rem 0;   
+}
+
+
+.roll {
+    margin-bottom: 2.5rem;
+}
+
+
+// Posts
+
+.post-title {
+    font-size: 2em;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.post-content {
+  margin: 0 30px 30px 30px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: darken($complimentary-color, 35%);
+    margin-bottom: -1rem;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+    line-height: 1.2rem;
+}
