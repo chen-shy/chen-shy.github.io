@@ -1,50 +1,173 @@
----
-layout: null
-sitemap: false
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% capture site_url %}{% if site.url %}{{ site.url | append: site.github.url }}{% else %}{{ site.github.url }}{% endif %}{% endcapture %}
-  {% for post in site.posts %}{% unless post.sitemap == false %}
+  
+  
   <url>
-    <loc>{{ post.url | prepend: site_url | uri_escape }}</loc>
-    {% if post.last_modified_at %}
-    <lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>
-    {% else %}
-    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    {% endif %}
+    <loc>https://chen-shy.github.io/blog/2016/sample-post-with-thumbnail</loc>
+    
+    <lastmod>2016-08-19T00:00:00+00:00</lastmod>
+    
   </url>
-  {% endunless %}{% endfor %}
-  {% for page in site.html_pages %}{% unless page.sitemap == false %}
+  
   <url>
-    <loc>{{ page.url | replace:'/index.html','/' | prepend: site_url | uri_escape }}</loc>
-    {% if page.last_modified_at %}
-    <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
-    {% endif %}
+    <loc>https://chen-shy.github.io/blog/2016/sample-post-with-thumbnail</loc>
+    
+    <lastmod>2016-08-18T00:00:00+00:00</lastmod>
+    
   </url>
-  {% endunless %}{% endfor %}
-  {% for collection in site.collections %}{% unless collection.last.output == false or collection.output == false %}
-  {% for doc in collection.last.docs %}{% unless doc.sitemap == false %}
+  
   <url>
-    <loc>{{ doc.url | replace:'/index.html','/' | prepend: site_url | uri_escape }}</loc>
-    {% if doc.last_modified_at %}
-    <lastmod>{{ doc.last_modified_at | date_to_xmlschema }}</lastmod>
-    {% endif %}
+    <loc>https://chen-shy.github.io/blog/2016/sample-post-with-thumbnail</loc>
+    
+    <lastmod>2016-08-17T00:00:00+00:00</lastmod>
+    
   </url>
-  {% endunless %}{% endfor %}
-  {% for doc in collection.docs %}{% unless doc.sitemap == false %}
+  
+  <url>
+    <loc>https://chen-shy.github.io/blog/2016/sample-post-with-thumbnail</loc>
+    
+    <lastmod>2016-08-16T00:00:00+00:00</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/blog/2016/sample-post-with-thumbnail</loc>
+    
+    <lastmod>2016-08-15T00:00:00+00:00</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/blog/2016/sample-post-with-thumbnail</loc>
+    
+    <lastmod>2016-08-14T00:00:00+00:00</lastmod>
+    
+  </url>
+  
+  
+  <url>
+    <loc>https://chen-shy.github.io/404.html</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/about/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/blog/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/contact/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/covers/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/documentation/header-image/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/illustration/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/documentation/installation/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/documentation/layouts/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/documentation/lightbox/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/documentation/navigation/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/photos/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/documentation/sass/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/documentation/seo/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/documentation/sidebar/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/documentation/social-icons/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>https://chen-shy.github.io/contact/thanks/</loc>
+    
+  </url>
+  
+  
+  
+  
     <url>
-      <loc>{{ doc.url | replace:'/index.html','/' | prepend: site_url | uri_escape }}</loc>
-      {% if doc.last_modified_at %}
-      <lastmod>{{ doc.last_modified_at | date_to_xmlschema }}</lastmod>
-      {% endif %}
+      <loc>https://chen-shy.github.io/blog/2016/sample-post-with-thumbnail</loc>
+      
     </url>
-  {% endunless %}{% endfor %}
-  {% endunless %}{% endfor %}
-  {% for file in site.html_files %}
-  <url>
-    <loc>{{ file.path | prepend: site_url | uri_escape }}</loc>
-    <lastmod>{{ file.modified_time | date_to_xmlschema }}</lastmod>
-  </url>
-  {% endfor %}
+  
+    <url>
+      <loc>https://chen-shy.github.io/blog/2016/sample-post-with-thumbnail</loc>
+      
+    </url>
+  
+    <url>
+      <loc>https://chen-shy.github.io/blog/2016/sample-post-with-thumbnail</loc>
+      
+    </url>
+  
+    <url>
+      <loc>https://chen-shy.github.io/blog/2016/sample-post-with-thumbnail</loc>
+      
+    </url>
+  
+    <url>
+      <loc>https://chen-shy.github.io/blog/2016/sample-post-with-thumbnail</loc>
+      
+    </url>
+  
+    <url>
+      <loc>https://chen-shy.github.io/blog/2016/sample-post-with-thumbnail</loc>
+      
+    </url>
+  
+  
+  
 </urlset>
